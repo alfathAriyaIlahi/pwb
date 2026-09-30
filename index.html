@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>
+Sistem Informasi Data Mahasiswa
+</title>
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Sistem Informasi Data Mahasiswa
+- Praktikum 1
+</h1>
+
+<p>
+Sistem informasi yang digunakan
+untuk mengelola data mahasiswa.
+</p>
+
+<img
+src="nitro.jpg" alt="Logo Sistem Informasi" width="150" height="150">
+
+</header>
+
+<hr>
+<nav>
+<ul>
+<li>
+<a href="#informasi"> Informasi Aplikasi </a>
+</li>
+
+<li>
+<a href="#daftar-mahasiswa"> Daftar Mahasiswa </a>
+</li>
+
+<li>
+<a href="#form-tambah"> Tambah Mahasiswa Baru </a>
+</li>
+</ul>
+</nav>
+
+<hr>
+<main> 
+    <section id="informasi">
+        <h2>Informasi Aplikasi</h2>
+        <p>Aplikasi ini digunakan untuk mengelola data mahasiswa, termasuk menambahkan, mengedit, dan menghapus data mahasiswa.</p>
+        <article>
+            <h3>Tentang Aplikasi</h3>
+            <p>Aplikasi ini digunakan sebagai media latihan pembuatan halaman HTML5.</p>
+        </article>
+    </section>
+    <hr>
+    <section id="daftar-mahasiswa">
+        <h2>Daftar Mahasiswa</h2>
+        <p>Berikut adalah daftar mahasiswa yang terdaftar dalam sistem:</p>
+        <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>foto</th>
+                <th>npm</th>
+                <th>nama</th>
+                <th>prodi</th>
+                <th>angkatan</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="foto1.jpg" alt="Foto Mahasiswa 1" width="50" height="50"></td>
+                <td>123456789</td>
+                <td>John Doe</td>
+                <td>Teknik Informatika</td>
+                <td>2020</td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="foto2.jpg" alt="Foto Mahasiswa 2" width="50" height="50"></td>
+                <td>987654321</td>
+                <td>Jane Smith</td>
+                <td>Sistem Informasi</td>
+                <td>2019</td>
+                <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="foto3.jpg" alt="Foto Mahasiswa 3" width="50" height="50"></td>
+                <td>456789123</td>
+                <td>Michael Johnson</td>
+                <td>Teknik Komputer</td>
+                <td>2021</td>
+                <td>michael.johnson@example.com</td>
+            </tr>
+        </tbody>    
+    </table>
+    </section>
+    <hr>
+    <section id="form-tambah">
+        <h2>Tambah Mahasiswa Baru</h2>
+        <p>Gunakan form berikut untuk menambahkan data mahasiswa baru ke dalam sistem:</p>
+        <form action="#" method="post"> 
+            <fieldset>
+                <legend>Formulir Tambah Mahasiswa</legend>
+            <p>
+                <label for="npm">NPM:</label>
+                <br>
+                <input type="text" id="npm" name="npm" placeholder="Masukkan NPM" required pattern="[0-9]{8,12}" title="NPM harus terdiri dari 8-12 digit angka">
+                <br> 
+                <small>  NPM harus berupa angka 8-12 digit</small>
+                </p>
+            <p>
+                <label for="nama">Nama:</label>
+                <br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required minlength="3" maxlength="100">
+                <br>
+                <small>  Nama harus terdiri dari 3-100 karakter</small>
+            </p>
+            <p>
+                <label for="prodi">Program Studi:</label>
+                <br>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknik Komputer">Teknik Komputer</option>
+                </select>
+                <br>
+                <small>  Pilih salah satu program studi</small>
+            </p>
+            <p>
+                <label for="angkatan">Angkatan:</label>
+                <br>
+                <input type="number" id="angkatan" name="angkatan" placeholder="Masukkan Angkatan" required min="2000" max="2099">
+                <br>
+                <small>  Angkatan harus berupa angka antara 2000-2099</small>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+                <br>
+                <small>  Masukkan email yang valid</small>
+            </p>
+            <button type="submit">Tambah Mahasiswa</button>
+            <button type="reset">Reset Form</button>
+        </fieldset>
+        </form>
+
+
+
+</main>
+
+</body>
+
+
+</html> 
